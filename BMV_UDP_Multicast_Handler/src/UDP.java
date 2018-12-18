@@ -175,7 +175,7 @@ public class UDP {
                                         public void run() {
                                             try {
 
-                                                UnicastBMVNoBytes.StartHandling(argsRecoveryGap);
+                                                new UnicastBMVNoBytes().StartHandling(argsRecoveryGap);
 
                                             } catch (Exception ex) {
                                                 System.out.println("[Error]{{\"Error\":{\"Description\":" + ex + "}}");
