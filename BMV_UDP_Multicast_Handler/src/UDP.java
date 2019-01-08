@@ -168,7 +168,7 @@ public class UDP {
 
                                 System.out.println("[RECOVERY]{{\"GAP\":{\"Quantity\":" + gap + ",\"First Sequence\":" + request + ",\"Final Sequence\":" + (seqNum.intValue() - 1) + "}}");
 
-                                if (gap > 1 && gap < 20000) {
+                                if (gap >= 1 && gap <= 20000) {
 
                                     new Thread(new Runnable() {
                                         @Override
@@ -234,7 +234,7 @@ public class UDP {
 
                                 System.out.println("[RECOVERY]{{\"GAP\":{\"Quantity\":" + gap + ",\"First Sequence\":" + request + ",\"Final Sequence\":" + (seqNum.intValue()-1) + "}}");
 
-                                if (gap > 1 && gap < 20000) {
+                                if (gap >= 1 && gap <= 20000) {
 
                                     new Thread(new Runnable() {
                                         @Override
